@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/lucaventre-02b161ba9f944c9168c3989abe2422a38badc730/",
+    "build": "vite build --base=/lucaventre-02b161ba9f944c9168c3989abe2422a38badc730/dist/",
     "preview": "vite preview"
   },
   "dependencies": {
