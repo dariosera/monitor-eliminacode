@@ -151,13 +151,13 @@ const mostraAnnuncio = function() {
                             playerMode.value = "big";
                         }
                         
-                    },5000)
+                    },8000)
 
                 } else if (nCoda > 0) {
                     mostraAnnuncio()
                 }
 
-            }, 5000)
+            }, 8000)
         }
        
        

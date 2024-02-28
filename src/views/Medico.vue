@@ -65,6 +65,8 @@ const setSala = function() {
                 connected.value = false;
                 sala.value = null;
                 modalBenvenuto.show()
+            } else {
+                errMsg.value = null;
             }
         },5000)
 
