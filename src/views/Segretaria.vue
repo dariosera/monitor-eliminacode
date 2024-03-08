@@ -126,8 +126,8 @@ client.on("message", (topic, message) => {
 });
 
 client.on("close", () => {
-  console.log("close");
-  window.location.reload()
+  //console.log("close");
+  //window.location.reload()
   connected.value = false
 });
 
@@ -162,8 +162,14 @@ const chiamaPaziente = function(id) {
 
 const richiama = function(id) {
     pazienti.value.forEach(p => {
+        let sala_precedente = null;
         if (p.id == id) {
             p.chiamata =  null;
+            if (import.meta.env.VITE_SALA_SECONDA_CHIAMATA) {
+                sala_precedente = p.sala;
+                p.sala = parseInt(import.meta.env.VITE_SALA_SECONDA_CHIAMATA)
+                inviaLista(sala_precedente)
+            }
             inviaLista(p.sala)
         }  
     })

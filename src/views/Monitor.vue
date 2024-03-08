@@ -157,7 +157,7 @@ const mostraAnnuncio = function() {
                     mostraAnnuncio()
                 }
 
-            }, 8000)
+            }, 30000)
         }
        
        

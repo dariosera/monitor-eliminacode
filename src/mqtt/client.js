@@ -1,8 +1,8 @@
 import mqtt from 'mqtt'
-const client = mqtt.connect('wss://f3e281e2eacc419590073eb780e56ee0.s1.eu.hivemq.cloud:8884/mqtt', {
+const client = mqtt.connect(import.meta.env.VITE_MQTT_WSS, {
    // log: console.log.bind(console),
-    username : 'TestMQTT',
-    password: 'TestMQTT.1',
+    username : import.meta.env.VITE_MQTT_USER,
+    password: import.meta.env.VITE_MQTT_PASS,
     keepalive: 30,
   });
 
