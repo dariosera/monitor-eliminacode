@@ -3,6 +3,7 @@ import { ref, reactive, watch, onMounted} from 'vue'
 import client from '@/mqtt/client'
 import { Modal } from 'bootstrap';
 
+
 const elencoSale = ["1","2","3"];
 
 const connected = ref(false)
